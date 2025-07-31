@@ -139,6 +139,10 @@ table {
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: #1a162e;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -1213,6 +1217,7 @@ button {
   display: flex;
   align-items: center;
   gap: 6px;
+  color: --text-color;
   font-size: 15px;
   font-weight: 500;
   line-height: 146.667%;
