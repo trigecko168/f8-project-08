@@ -4,7 +4,7 @@
 }
 
 .header {
-  background: #eee;
+  background: var(--header-bg);
 }
 
 .top-bar {
@@ -42,8 +42,8 @@
     height: 50px;
 
     border-radius: 8px;
-    background: #fff;
-    box-shadow: 0 20px 60px 10px rgba(237, 237, 246, 0.2);
+    background: var(--top-act-group-bg);
+    box-shadow: 0 20px 60px 10px var(--top-act-group-shadow);
   }
 
   &__group--single &__btn {
@@ -66,7 +66,7 @@
   &__separate {
     width: 1px;
     height: 30px;
-    background: #ededf6;
+    background: var(--top-act-group-separate);
   }
 
   &__avatar {
