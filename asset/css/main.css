@@ -141,6 +141,8 @@ table {
 
 :root {
   --text-color: #1a162e;
+  --icon-color: brightness(0) saturate(100%) invert(8%) sepia(26%)
+    saturate(1305%) hue-rotate(210deg) brightness(101%) contrast(97%);
 }
 
 html {
@@ -162,6 +164,18 @@ button {
   border: none;
   outline: none;
   background: transparent;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  color: inherit;
+}
+
+.icon {
+  filter: var(--icon-color);
 }
 
 .row > *, .container-fluid, .container {
@@ -1195,13 +1209,16 @@ button {
     --grid-gutter-y: 90px;
   }
 }
+.top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   background: #eee;
 }
 
 .top-bar {
-  display: flex;
-  align-items: center;
   padding: 30px 0;
 }
 
@@ -1210,28 +1227,19 @@ button {
   margin-right: auto;
 }
 .navbar__list {
-  display: flex;
-  align-items: center;
   gap: 30px;
 }
 .navbar__link {
-  display: flex;
-  align-items: center;
   gap: 6px;
-  color: #1a162e;
   font-size: 15px;
   font-weight: 500;
   line-height: 146.667%;
 }
 
 .top-act {
-  display: flex;
-  align-items: center;
   gap: 20px;
 }
 .top-act__group {
-  display: flex;
-  align-items: center;
   min-width: 50px;
   height: 50px;
   border-radius: 8px;
@@ -1242,10 +1250,9 @@ button {
   padding: 13px;
 }
 .top-act__btn {
-  display: flex;
-  align-items: center;
   gap: 10px;
   padding: 13px 20px;
+  cursor: pointer;
 }
 .top-act__title {
   font-size: 15px;
@@ -1262,6 +1269,7 @@ button {
   width: 50px;
   height: 50px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .logo {
