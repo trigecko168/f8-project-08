@@ -5,6 +5,9 @@
 
 .header {
   background: var(--header-bg);
+
+  @include breakpoint(lg) {
+  }
 }
 
 .top-bar {
