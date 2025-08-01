@@ -1,3 +1,5 @@
+@use "sass:math";
+@use "sass:map";
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -8,10 +10,12 @@ $grid-breakpoints: (
 );
 
 @mixin breakpoint($key) {
-  $breakpoint: map-get($grid-breakpoints, $key);
+  $max-width: map.get($container-max-widths, $breakpoint);
   @if ($breakpoint) {
     @media (max-width: ($breakpoint - 0.02)) {
       @content;
     }
+  } @else {
+    @error "The value #{$key} is not in breakpoints list.";
   }
 }

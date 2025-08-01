@@ -1,11 +1,12 @@
-/* Error: Undefined mixin.
+/* Error: Undefined variable.
  *    ,
- * 9  | /   @include breakpoint(lg) {
- * 10 | \   }
+ * 13 |   $max-width: map.get($container-max-widths, $breakpoint);
+ *    |                       ^^^^^^^^^^^^^^^^^^^^^
  *    '
- *   scss\layout\_header.scss 9:3  @forward
- *   scss\layout\_index.scss 1:1   @use
- *   scss\main.scss 3:1            root stylesheet */
+ *   scss\abstracts\_mixins.scss 13:23  breakpoint()
+ *   scss\layout\_header.scss 11:3      @forward
+ *   scss\layout\_index.scss 1:1        @use
+ *   scss\main.scss 3:1                 root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -15,5 +16,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 9  \2502  \250c    @include breakpoint(lg) {\a 10 \2502  \2514    }\a    \2575 \a   scss\\layout\\_header.scss 9:3  @forward\a   scss\\layout\\_index.scss 1:1   @use\a   scss\\main.scss 3:1            root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 13 \2502    $max-width: map.get($container-max-widths, $breakpoint);\d\a    \2502                        ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\abstracts\\_mixins.scss 13:23  breakpoint()\a   scss\\layout\\_header.scss 11:3      @forward\a   scss\\layout\\_index.scss 1:1        @use\a   scss\\main.scss 3:1                 root stylesheet";
 }
