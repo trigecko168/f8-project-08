@@ -55,6 +55,14 @@
   }
 
   &__item {
+    &:first-child a {
+      padding-left: 0;
+    }
+
+    &:last-child a {
+      padding-right: 0;
+    }
+
     &:hover .dropdown {
       display: block;
     }
