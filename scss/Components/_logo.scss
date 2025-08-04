@@ -6,7 +6,10 @@
 
   @include abstracts.screen(lg) {
     gap: 10px;
-    margin-left: 39px;
+  }
+
+  @include abstracts.screen(md) {
+    margin-left: 0;
   }
 
   &__title {
