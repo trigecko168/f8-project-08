@@ -41,10 +41,10 @@
 }
 
 .navbar {
-  margin-left: 144px;
+  margin-left: 129px;
 
   @include abstracts.screen(xl) {
-    margin-left: 50px;
+    margin-left: 28px;
   }
 
   @include abstracts.screen(lg) {
@@ -56,14 +56,6 @@
   }
 
   &__item {
-    &:first-child a {
-      padding-left: 0;
-    }
-
-    &:last-child a {
-      padding-right: 0;
-    }
-
     &:hover .dropdown {
       display: block;
     }
