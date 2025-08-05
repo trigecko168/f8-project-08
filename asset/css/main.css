@@ -1407,8 +1407,12 @@ html {
   filter: var(--dropdown-arrow-color);
 }
 
+.top-menu {
+  --main-column-width: 292px;
+  position: relative;
+}
 .top-menu__main {
-  width: 292px;
+  width: var(--main-column-width);
   max-height: calc(var(--inner-max-height) - var(--inner-padding) * 2);
   border-right: 1px solid var(--top-menu-border-color);
   overflow-y: auto;
@@ -1461,6 +1465,11 @@ html {
 .menu-column__link:hover {
   color: #0071dc;
   font-weight: 500;
+}
+
+.sub-menu {
+  position: absolute;
+  inset: 0 0 0 var(--main-column-width);
 }
 
 /*# sourceMappingURL=main.css.map */
