@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/trigecko168/f8-project-08/issues"
   },
-  "homepage": "https://github.com/trigecko168/f8-project-08#readme"
+  "homepage": "https://github.com/trigecko168/f8-project-08#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.13.1"
+  }
 }
