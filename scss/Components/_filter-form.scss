@@ -24,9 +24,16 @@
     margin-top: 30px;
 
     &-label {
+      display: block;
       font-size: 2.2rem;
       font-weight: 500;
       line-height: 145.455%;
+
+      &--small {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 142.857%;
+      }
     }
 
     &-group {
@@ -34,6 +41,7 @@
 
       &--inline {
         display: flex;
+        gap: 30px;
       }
     }
 
@@ -67,7 +75,22 @@
         left: var(--max-value);
       }
     }
+
+    &-input {
+      width: 121px;
+
+      height: 36px;
+      padding: 0 12px;
+
+      border-radius: 6px;
+      border: 1px solid#D2D1D6;
+
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 142.857%;
+    }
   }
+  // End form
 
   &__row {
     display: flex;
