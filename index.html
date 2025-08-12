@@ -165,13 +165,17 @@
                         >
                           Minimum
                         </label>
-                        <input
-                          type="text"
-                          name=""
-                          id=""
-                          value="$30.00"
-                          class="filter__form-input"
-                        />
+                        <div
+                          class="filter__form-text-input filter__form-text-input--small"
+                        >
+                          <input
+                            type="text"
+                            name=""
+                            id=""
+                            class="filter__form-input"
+                            value="$30.00"
+                          />
+                        </div>
                       </div>
                       <div>
                         <label
@@ -180,13 +184,17 @@
                         >
                           Maximum
                         </label>
-                        <input
-                          type="text"
-                          name=""
-                          id=""
-                          value="$100.00"
-                          class="filter__form-input"
-                        />
+                        <div
+                          class="filter__form-text-input filter__form-text-input--small"
+                        >
+                          <input
+                            type="text"
+                            name=""
+                            id=""
+                            class="filter__form-input"
+                            value="$100.00"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -198,10 +206,10 @@
                     <label for="" class="filter__form-label">Size/Weight</label>
                     <div class="filter__form-group">
                       <div class="filter__form-select-wrap">
-                        <div class="filter__form-select">
+                        <div class="filter__form-select" style="--width: 158px">
                           500g
                           <img
-                            src="./asset/icon/arrow-down.svg"
+                            src="./asset/icon/select-arrow.svg"
                             alt=""
                             class="filter__form-select-arrow"
                           />
@@ -209,7 +217,7 @@
                         <div class="filter__form-select">
                           Gram
                           <img
-                            src="./asset/icon/arrow-down.svg"
+                            src="./asset/icon/select-arrow.svg"
                             alt=""
                             class="filter__form-select-arrow"
                           />
@@ -228,7 +236,38 @@
                   <div class="filter__separate"></div>
 
                   <!-- Filter column 3 -->
-                  <div class="filter__col"></div>
+                  <div class="filter__col">
+                    <label for="" class="filter__form-label">Brand</label>
+                    <div class="filter__form-group">
+                      <div class="filter__form-text-input">
+                        <input
+                          type="text"
+                          name=""
+                          id=""
+                          placeholder="Search brand name"
+                          class="filter__form-input"
+                        />
+                        <img
+                          src="./asset/icon/search.svg"
+                          alt=""
+                          class="filter__form-input-icon"
+                        />
+                      </div>
+                    </div>
+                    <div class="filter__form-group">
+                      <div class="filter__form-tags">
+                        <button class="filter__form-tag">Lavazza</button>
+                        <button class="filter__form-tag">Nescafe</button>
+                        <button class="filter__form-tag">Starbucks</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__row filter__footer">
+                  <button class="btn btn--text filter__cancel">Cancel</button>
+                  <button class="btn btn--primary filter__submit">
+                    Show Result
+                  </button>
                 </div>
               </form>
             </div>
