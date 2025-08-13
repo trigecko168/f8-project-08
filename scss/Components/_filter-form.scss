@@ -6,13 +6,28 @@
 .filter {
   position: absolute;
   right: 0;
-  top: 50px;
+  top: 56px;
 
   padding: 30px;
   border-radius: 20px;
 
   background: var(--filter-form-bg);
   filter: drop-shadow(0 40px 90px var(--filter-form-shadow));
+  transition: opacity, visibility;
+  transition-duration: 0.5s;
+
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: -17px;
+    right: 20px;
+    height: 20.5px;
+    filter: var(--filter-form-arrow);
+  }
 
   &__heading {
     font-size: 2.2rem;
