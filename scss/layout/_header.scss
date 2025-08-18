@@ -98,19 +98,15 @@
     }
   }
 
-  &__group--single {
-    display: none;
-  }
-
-  &__group--single &__btn {
-    padding: 13px;
-  }
-
   &__btn {
     @extend %flexItemsCenter;
     gap: 10px;
     padding: 13px 20px;
     cursor: pointer;
+  }
+
+  &__group--single &__btn {
+    padding: 13px;
   }
 
   &__title {

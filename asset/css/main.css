@@ -1362,16 +1362,13 @@ html {
     display: none;
   }
 }
-.top-act__group--single {
-  display: none;
-}
-.top-act__group--single .top-act__btn {
-  padding: 13px;
-}
 .top-act__btn {
   gap: 10px;
   padding: 13px 20px;
   cursor: pointer;
+}
+.top-act__group--single .top-act__btn {
+  padding: 13px;
 }
 .top-act__title {
   font-size: 15px;
@@ -1842,6 +1839,8 @@ html {
 }
 
 .btn {
+  display: flex;
+  align-items: center;
   height: 46px;
   padding: 0 20px;
   border-radius: 6px;
