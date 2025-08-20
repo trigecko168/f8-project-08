@@ -8,6 +8,18 @@
     }
   }
 
+  &__group:has(:invalid):has(&__input:not(:placeholder-shown)) {
+    .form__text-input {
+      border-color: red;
+      background: rgb($color: red, $alpha: 0.1);
+    }
+
+    .form__error,
+    .form__input-icon-error {
+      display: block;
+    }
+  }
+
   &__text-input {
     display: flex;
     align-items: center;
@@ -37,6 +49,21 @@
     &::placeholder {
       color: #d2d1d6;
     }
+  }
+
+  &__error {
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 10px;
+    color: red;
+    display: none;
+  }
+
+  &__input-icon-error {
+    width: 20px;
+    height: 15px;
+    display: none;
   }
 
   &__pull-right {
